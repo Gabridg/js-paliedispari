@@ -13,6 +13,36 @@ Domande da farsi quando scriviamo una funzione
 - 2 - Ho bisogno di parametri? (se si quali?)
 - 3 - Devo restituire qualcosa? (se si cosa? di che tipo?)
 - 4 OPZIONALE:  Qualcosa  potrebbe andare storto? (se si, cosa?)
+
+`
+
 */
 
 // Esercizio 2
+
+const userChoice = prompt('Pari o Dispari ?: ', 'pari');
+
+const userNumber = parseInt(prompt('Inserisci un numero da 1 a 5: ', '2'));
+
+function getCpuNumber(min = 1, max = 5) {
+    const cpuNumber = Math.floor(Math.random() * (max - min)) + min;
+    return cpuNumber;
+}
+
+const cpuNumber = getCpuNumber();
+
+console.log(userChoice);
+console.log(userNumber);
+console.log(cpuNumber);
+
+function sumNumber(a, b) {
+    const sum = userNumber + cpuNumber;
+
+    return sum;
+}
+
+const result = sumNumber();
+
+console.log(result);
+
+
