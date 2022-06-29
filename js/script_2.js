@@ -20,7 +20,7 @@ Domande da farsi quando scriviamo una funzione
 
 // Esercizio 2
 
-const userChoice = prompt('Pari o Dispari ?: ', 'pari');
+const userChoice = prompt('Pari o Dispari ?: ', 'Pari');
 
 const userNumber = parseInt(prompt('Inserisci un numero da 1 a 5: ', '2'));
 
@@ -45,4 +45,17 @@ const result = sumNumber();
 
 console.log(result);
 
+const even = result % 2 === 0;
 
+const odd = result % 2 === 1;
+
+console.log(even);
+console.log(odd);
+
+if (even === true && userChoice === 'Pari') {
+    alert('Hai vinto!');
+} else if (odd === true && userChoice === 'Dispari') {
+    alert('Hai vinto!');
+} else {
+    alert('Hai Perso!');
+}
