@@ -16,3 +16,21 @@ Domande da farsi quando scriviamo una funzione
 
 // Esercizio 1
 
+const userWord = prompt('Inserisci una parola: ', 'otto');
+console.log(userWord);
+
+function reverseWord(a) {
+    let result = '';
+    for (let i = userWord.length - 1; i >= 0; i--) {
+        result += userWord[i];
+    }
+
+    return result;
+}
+
+const reversedWord = reverseWord(userWord);
+
+
+if (reversedWord === userWord) {
+    alert('palindromo');
+}
